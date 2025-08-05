@@ -1,14 +1,12 @@
-/* USPS Brand Variables */
 :root {
   --usps-blue: #0072CE;
   --usps-dark-blue: #004C8A;
   --usps-light-gray: #F4F4F4;
-  --usps-red-accent: #DA291C;
   --text-dark: #202020;
   --text-light: #ffffff;
+  --usps-red-accent: #DA291C;
 }
 
-/* Base Reset and Typography */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +14,6 @@ body {
   color: var(--text-dark);
 }
 
-/* Unified Container */
 .welcome-container {
   text-align: center;
   padding: 3rem 1rem;
@@ -27,7 +24,6 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Heading and Description */
 h1 {
   font-size: 2rem;
   margin-bottom: 0.75rem;
@@ -37,34 +33,24 @@ h1 {
 p {
   font-size: 1.125rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-li {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  gap: 16px; /* Adds space between name and button */
+  margin-bottom: 1rem;
 }
 
-
-.employee-card {
-  background-color: var(--usps-light-gray);
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 0.75rem;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
-}
-
-.employee-name {
+.employee-count {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: var(--usps-red-accent);
 }
 
-/* Button Styling - Matching Welcome Page */
+.welcome-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .welcome-button {
   background-color: var(--usps-blue);
   color: var(--text-light);
@@ -84,16 +70,10 @@ li {
   outline-offset: 2px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 600px) {
-  .employee-card {
+  .welcome-actions {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .welcome-button {
-    margin-top: 0.5rem;
-    align-self: flex-end;
+    align-items: center;
   }
 }
 
